@@ -127,6 +127,7 @@
 	self.textCache = text;
 	self.textView.text = text;
 	[self style];
+	[self textViewDidChange:self.textView];
 }
 
 - (void)setKeyboardType:(UIKeyboardType)keyboardType

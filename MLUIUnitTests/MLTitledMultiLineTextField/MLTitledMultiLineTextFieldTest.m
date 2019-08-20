@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 #import <OCMock/OCMock.h>
 
-@interface MLTitledMultiLineTextField ()
+@interface MLTitledMultiLineTextField () <UITextViewDelegate>
 
 @property (weak, nonatomic) UITextView *textView;
 
@@ -67,6 +67,16 @@
 
 	XCTAssertNil(textField.textView.font);
 	XCTAssertEqual([textField sizeForText:@""].width, 0);
+}
+
+- (void)testShouldUpdateSizeOnSetText
+{
+	MLTitledMultiLineTextField *textField = OCMPartialMock(self.textField);
+	OCMStub([textField textViewDidChange:OCMOCK_ANY]).andForwardToRealObject();
+
+	textField.text = @"123";
+
+	OCMVerify([textField textViewDidChange:OCMOCK_ANY]);
 }
 
 @end
