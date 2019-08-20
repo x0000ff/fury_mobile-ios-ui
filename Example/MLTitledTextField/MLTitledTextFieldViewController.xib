@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,6 +14,7 @@
                 <outlet property="scrollView" destination="P2o-1J-LLS" id="YER-jL-gDT"/>
                 <outlet property="textField1" destination="ZcJ-1b-FDZ" id="SrX-WZ-08g"/>
                 <outlet property="textField2" destination="cCH-L2-bld" id="qzR-tS-7fV"/>
+                <outlet property="textField3" destination="sJe-NM-Qp1" id="WgC-0O-9Ki"/>
                 <outlet property="textFieldAlignCenter" destination="0Ay-BT-CLQ" id="AWB-ja-cnf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -215,7 +216,7 @@
                 <constraint firstAttribute="trailing" secondItem="P2o-1J-LLS" secondAttribute="trailing" id="bdE-t5-dZU"/>
                 <constraint firstItem="YAv-wm-cNf" firstAttribute="top" secondItem="P2o-1J-LLS" secondAttribute="bottom" constant="8" id="zj0-6E-q04"/>
             </constraints>
-            <point key="canvasLocation" x="74" y="296"/>
+            <point key="canvasLocation" x="118.40000000000001" y="266.26686656671666"/>
         </view>
     </objects>
 </document>

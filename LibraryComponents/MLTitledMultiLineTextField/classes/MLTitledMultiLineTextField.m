@@ -242,6 +242,11 @@
 	return textRect.size;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    NSLog(@">>> XXX");
+}
+
 #pragma mark TextViewDelegate
 
 - (void)textViewDidChange:(UITextView *)textView
@@ -251,7 +256,9 @@
 	[self style];
 	[self sendActionsForControlEvents:UIControlEventEditingChanged];
 
+    [self.textView setNeedsLayout];
 	[self.textView layoutIfNeeded];
+    [self.textView setNeedsLayout];
 }
 
 - (void)textViewDidBeginEditing:(UITextView *)textView
